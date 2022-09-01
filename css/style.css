@@ -1,0 +1,249 @@
+@import "fonts.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Root UI';
+    background: none;
+    outline: none;
+    text-decoration: none;
+}
+a, button{
+    transition: 0.2s;
+}
+body{
+    background: #080218;
+}
+
+.header{
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid #716E7B;
+    backdrop-filter: blur(54px);
+    padding: 10px 0 16px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.header--wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header__logo{
+    width: 237px;
+    height: 35px;
+}
+.header__logo:hover{
+    box-shadow: 15px 15px 40px rgba(237, 129, 29, 0.37);
+}
+.header__logo-image{
+    width: inherit;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.header__nav-item{
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: -0.01em;
+    color: white;
+}
+.header__nav-item:hover{
+    color: #EDAB12;
+}
+.header__contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+}
+.header__contacts-phone{
+    font-family: 'Bebas Neue Cyrillic';
+    font-size: 24px;
+    line-height: 38px;
+    color: #EDAB12;
+}
+.header__contacts-phone:hover{
+    color: white;
+}
+.header__contacts-mail{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: white;
+}
+.header__contacts-mail:hover{
+    color: #EDAB12;
+}
+.visit{
+    background: url("../img/visit_back.png") no-repeat top center/100%;
+    mix-blend-mode: lighten;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 15%;
+}
+.visit--wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.visit__logo{
+    width: 237px;
+}
+.visit__title{
+    font-size: 118px;
+    line-height: 130px;
+    color: white;
+    font-weight: 400;
+    font-family: "Bebas Neue Cyrillic";
+    margin-top: 30px;
+}
+.visit__desc{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    color: white;
+    margin-top: 10px;
+}
+.visit__link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 259px;
+    padding: 24px 25px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #EDAB12;
+    outline: 1px solid #EDAB12;
+    filter: drop-shadow(0px 15px 40px rgba(237, 129, 29, 0.37));
+    border-radius: 2px 10px 10px 10px;
+    margin-top: 45px;
+    text-transform: uppercase;
+}
+.visit__link > svg > path{
+    stroke: #EDAB12;
+    transition: 0.2s;
+}
+.visit__link:hover{
+    background: #ECB91E;
+    outline: 1px solid #EDB91D;
+    box-shadow: 0 15px 40px rgba(237, 129, 29, 0.37);
+    color: #080218;
+}
+.visit__link:hover > svg > path{
+    stroke: #080218;
+}
+.visit__link:active{
+    background: #D59A10;
+    outline: 1px solid #EDB91D;
+    box-shadow: 0 15px 40px rgba(237, 129, 29, 0.37);
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.direction--name{
+    font-size: 14px;
+    color: #34E7FF;
+    outline: 2px solid #1C6B82;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.direction--title{
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 88px;
+    color: white;
+    font-family: "Bebas Neue Cyrillic";
+    max-width: 930px;
+}
+.about__description{
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+    color: #CECCD1;
+    max-width: 555px;
+}
+.about__orange{
+    color: #EDAB12;
+    font-weight: 500;
+}
+.about__pluses{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+.about__pluses-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.about__pluses-item--image{
+    width: 281px;
+    height: 343px;
+}
+.about__pluses-item--text{
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #CECCD1;
+    max-width: 281px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.about__pluses-item--pseudo{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: white;
+    margin-top: -5px;
+}
+.decision{
+    width: calc(100% - 55px);
+    margin: 150px auto;
+    outline: 1px solid #1C6B82;
+    border-radius: 15px;
+    padding: 115px 0 135px 0;
+    background: url("../img/about_back.png") no-repeat 100%/cover;
+}
+.decision--wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.decision__text{
+    font-size: 20px;
+    font-weight: 400;
+    color: #CECCD1;
+    letter-spacing: -0.01em;
+    max-width: 684px;
+}
+.decision__orange{
+    color: #EDAB12;
+    font-weight: 500;
+}
+.decision__white{
+    color: white;
+    font-weight: 500;
+}
