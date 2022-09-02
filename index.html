@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="css/style.css">
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
   <meta charset="UTF-8">
   <title>Title</title>
 </head>
@@ -19,7 +23,7 @@
       <a href="#contacts" class="header__nav-item">Контакты</a>
     </nav>
     <div class="header__contacts">
-      <a href="tel: +7(915)-314-55-11" class="header__contacts-phone">+ 7 915 314 55 11</a>
+      <a href="tel: +7(915)-314-55-11" class="header__contacts-phone"><span>+</span> 7 915 314 55 11</a>
       <a href="mailto: atom.mining@bk.ru" class="header__contacts-mail">atom.mining@bk.ru</a>
     </div>
   </div>
@@ -64,8 +68,9 @@
   <section class="decision">
     <div class="decision--wrap">
       <p class="direction--name">О КОМПАНИИ</p>
-      <p class="direction--title">Команда ATOMMINING предлагает оптимальные решения в майнинг бизнесе для своих клиентов</p>
-      <p class="decision__text"><span class="decision__orange">Наша главная задача – </span><span class="decision__white">сделать работу в криптоиндустрии максимально понятной и прозрачной для каждого желающего. </span>Поэтому, мы постоянно вносим инновации в майнинг и бизнес-процессы компании. Майнинг с нашей компанией – это просто.</p>
+      <p class="direction--title">Наша главная задача – <span class="direction--orange">сделать работу в криптоиндустрии максимально понятной и прозрачной для каждого.</span></p>
+      <p class="decision__text">Мы интегрируем инновационные решения в технологию майнинга. Вместе с тем, адаптируем классические бизнес-процессы компании под новые задачи.
+        <span class="decision__orange">Майнинг с нашей компанией – это просто.</span></p>
     </div>
   </section>
   <section class="multi">
@@ -119,7 +124,97 @@
         </div>
       </div>
     </div>
+    <img src="img/multi_left.png" alt="" class="multi__left">
+    <img src="img/multi_bot.png" alt="" class="multi__bot">
+    <img src="img/multi_centr.png" alt="" class="multi__centr">
+  </section>
+  <section class="info">
+    <div class="info__top">
+      <p class="info__top-title">Компания ATOMMINING основана в городе Минске командой специалистов с <span class="info__top-orange">опытом работы в криптоиндустрии с 2016 года</span></p>
+      <p class="info__top-desc">Организация начала свое развитие со сборки и продажи майнинг ферм на GPU. Успешно освоив данный сегмент, было принято решение о создании собственного дата-центра для размещения оборудования клиентов</p>
+    </div>
+    <div class="info__bottom">
+      <p class="info__bottom-start">На сегодняшний день компания располагает площадями</p>
+      <p class="info__bottom-title">более 7000 м.кв,</p>
+      <p class="info__bottom-desc"><span class="info__bottom-orange">которые имеют все необходимые технические условия для эффективного майнинга.</span> Собственная производственная линия обеспечивает выполнение любого объема заказов. Налаженная закупка и комплексная логистика комплектующих от производителей – гарантируют стабильную работу компании.</p>
+      <div class="info__bottom-slider">
+        <div class="slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/slider_photo.png" alt="" class="slider__image">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider_photo.png" alt="" class="slider__image">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider_photo.png" alt="" class="slider__image">
+            </div>
+          </div>
+        </div>
+        <div class="slider--prev">
+          <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.999999 0.999998L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+        </div>
+        <div class="slider--next">
+          <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.999999 0.999998L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="directions">
+    <h1 class="directions__title">Направления</h1>
+    <div class="directions--items">
+      <div class="directions__item">
+        <img src="img/directions_first.svg" alt="" class="directions__item-image">
+        <p class="directions__item-title">Консультация и сопровождение клиента на всех этапах сотрудничества</p>
+        <p class="directions__item-desc">Технические консультационные услуги, подбор оборудования, персональный менеджер.</p>
+      </div>
+      <div class="directions__item">
+        <img src="img/directions_second.svg" alt="" class="directions__item-image">
+        <p class="directions__item-title">Мультимайнинг</p>
+        <p class="directions__item-desc">Управление мощностями для получения максимальной доходности.</p>
+      </div>
+      <div class="directions__item">
+        <img src="img/directions_third.svg" alt="" class="directions__item-image">
+        <p class="directions__item-title">Производство и продажа ферм для майнинга на GPU</p>
+        <p class="directions__item-desc">Собственная производственная линия, опыт работы с оборудованием для майнинга криптовалют с 2016 года, комплектующие от поставщиков.</p>
+      </div>
+      <div class="directions__item">
+        <img src="img/directions_fourth.svg" alt="" class="directions__item-image">
+        <p class="directions__item-title">Профессиональный сервис 24/7</p>
+        <p class="directions__item-desc">Команда администраторов обеспечивает бесперебойную работу оборудования.</p>
+      </div>
+      <div class="directions__item">
+        <img src="img/directions_fifth.svg" alt="" class="directions__item-image">
+        <p class="directions__item-title">Размещение оборудования в собственных дата-центрах</p>
+        <p class="directions__item-desc">Общая площадь – более 7000 м.кв., система промышленной вентиляции и охлаждения, гарантия, охрана.</p>
+      </div>
+      <div class="directions__item">
+        <img src="img/directions_sixth.svg" alt="" class="directions__item-image">
+        <p class="directions__item-title">Комплексные решения по созданию бизнес-моделей майнинга</p>
+        <p class="directions__item-desc">Индивидуальные пакеты предложений, исходя из требований заказчика.</p>
+      </div>
+    </div>
+    <img src="img/directions_top.png" alt="" class="directions__top">
+    <img src="img/directions_bot.png" alt="" class="directions__bot">
+  </section>
+  <section class="media">
+    <div class="media--top">
+      <h1 class="media__title">Медиа отдел ATOMMINING создает информационно познавательный контент о деятельности компании</h1>
+      <h1 class="media__description">Где мы делимся собственным опытом и компетенциями, а также анализируем мировые новости майнинга и криптоиндустрии.
+        Весь материал доступен на официальных ресурсах.</h1>
+    </div>
+    <div class="media--bot">
+
+    </div>
   </section>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/sliderPhoto.js"></script>
 </body>
 </html>
