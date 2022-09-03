@@ -1,6 +1,14 @@
 const swiper = new Swiper('.slider', {
     navigation: {
-        nextEl: '.slider--next',
-        prevEl: '.slider--prev',
+        nextEl: '.image--next',
+        prevEl: '.image--prev',
+    }
+})
+
+const swiper2 = new Swiper('.media__slider-field', {
+    slidesPerView: 3,
+    navigation: {
+        nextEl: '.video--next',
+        prevEl: '.video--prev'
     }
 })

@@ -14,6 +14,7 @@ a, button{
 }
 body{
     background: #080218;
+    overflow-x: hidden;
 }
 
 .header{
@@ -551,6 +552,7 @@ body{
     gap: 15px;
     max-width: 1200px;
     margin: 130px auto 0 auto;
+    width: 100%;
 }
 .media__title{
     font-size: 70px;
@@ -563,6 +565,632 @@ body{
 .media__description{
     font-size: 22px;
     line-height: 31px;
+    font-weight: 400;
     letter-spacing: -0.01em;
     color: #CECCD1;
+    max-width: 670px;
+}
+.media--bot{
+    background: #0E0F20;
+    margin-top: 300px;
+    position: relative;
+    padding-top: 50vh;
+}
+.media--bot_wrap{
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+.media__main{
+    position: absolute;
+    top: -260px;
+}
+.media__slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+}
+.media__slider-title{
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 55px;
+    color: white;
+    font-family: "Bebas Neue Cyrillic";
+}
+.media__slider-field{
+    max-width: 1200px;
+    position: relative;
+}
+.media__slider-field > .swiper-wrapper{
+    gap: 40px;
+}
+.media__slider-item{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    align-items: center;
+    max-width: 360px;
+}
+.media__slider-item--image{
+    width: 100%;
+}
+.media__slider-item--text{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: white;
+}
+.media__slider-left, .media__slider-right{
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+}
+.media__slider-left{
+    left: -225px;
+    z-index: 2;
+    top: 0;
+}
+.media__slider-right{
+    right: -225px;
+    top: 0;
+    z-index: 2;
+}
+.video--next, .video--prev{
+    z-index: 5;
+    top: 50%;
+}
+.catalog{
+    max-width: 1200px;
+    margin: 130px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.catalog__title{
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 77px;
+    color: white;
+    font-family: "Bebas Neue Cyrillic";
+    max-width: 657px;
+    margin-bottom: 10px;
+}
+.catalog__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.03);
+    outline: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 47px 65px;
+    margin-top: 20px;
+    gap: 140px;
+}
+.catalog__item-image{
+    width: 100%;
+}
+.catalog__item-chars{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.catalog__item-chars--name{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    color: white;
+    font-family: "Bebas Neue Cyrillic";
+    margin-bottom: 10px;
+}
+.catalog__item-chars--green{
+    color: rgba(126, 189, 10, 1);
+    font-family: "Bebas Neue Cyrillic";
+}
+.catalog__item-chars--red{
+    color: rgba(223, 43, 32, 1);
+    font-family: "Bebas Neue Cyrillic";
+}
+.chars__item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.chars__item-name{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: rgba(237, 171, 18, 1);
+}
+.chars__item-desc{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: white;
+}
+.chars__item-slash{
+    color: rgba(113, 110, 123, 1);
+}
+.chars__left{
+    margin-left: -130px;
+}
+.chars__right{
+    margin-right: -160px;
+}
+.chars__item-button{
+    width: 183px;
+    text-transform: none;
+    border-radius: 5px 5px 25px 5px;
+    padding: 15px 25px;
+    margin-top: 26px;
+}
+.catalog__button{
+    width: 100%;
+    border-radius: 5px 5px 25px 25px;
+    box-sizing: border-box;
+    justify-content: center;
+    text-transform: none;
+    padding: 19px 0;
+    margin-top: 30px;
+}
+.pay{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.pay__title{
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 77px;
+    color: white;
+    font-family: "Bebas Neue Cyrillic";
+}
+.pay__cards{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+}
+.pay__cards-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 28px 23px 45px 41px;
+    height: 415px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 5px 25px 5px 5px;
+}
+.pay__cards-item:nth-child(2) > .card__title{
+    margin-bottom: 5px;
+}
+.pay__cards-item:hover:not(:last-child){
+    cursor: pointer;
+    background: rgba(237, 171, 18, 1);
+}
+.pay__cards-item:hover:not(:last-child) > p:not(.card__number){
+    color: #080218;
+}
+.pay__cards-item:hover:not(:last-child):not(:last-child) > .card__button{
+    background: white;
+    outline: 1px solid white;
+    color: #080218;
+}
+.pay__cards-item:hover:not(:last-child):not(:last-child) > .card__button > svg > path{
+    stroke: #080218;
+}
+.pay__cards-item:hover:not(:last-child):not(:last-child) > .card__check > svg > path{
+    stroke: #080218;
+}
+.pay__cards-item:hover:not(:last-child) > .card__check > svg > rect{
+    stroke: #080218;
+}
+.pay__cards-item:hover:not(:last-child) > .card__check > p:not(.card__number){
+    color: #080218;
+}
+.card__title{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: white;
+    text-transform: uppercase;
+}
+.card__desc{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: white;
+    max-width: 223px;
+}
+.card__button{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+    color: rgba(237, 171, 18, 1);
+    outline: 1px solid #EDAB12;
+    border-radius: 5px 5px 25px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 183px;
+    padding: 15px 25px;
+    margin-top: auto;
+}
+.card__button > svg > path{
+    stroke: #EDAB12;
+}
+.card__number{
+    font-size: 183px;
+    font-weight: 700;
+    line-height: 220px;
+    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    right: 0;
+    bottom: -55px;
+}
+.card__check{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.card__check-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: white;
+}
+.card__last-title{
+    font-size: 20px;
+    line-height: 24px;
+}
+.card__last-desc{
+    max-width: 275px;
+}
+.card__list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 25px;
+}
+.card__list-name{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: rgba(237, 171, 18, 1);
+}
+.card__list > ul{
+    padding-left: 17px;
+}
+.card__list-item{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: white;
+}
+.team{
+    max-width: 1200px;
+    margin: 130px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+}
+.team__title{
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 88px;
+    color: white;
+    font-family: "Bebas Neue Cyrillic";
+    text-transform: uppercase;
+}
+.team__field{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.team__field-item:not(:nth-child(5), :nth-child(6), :nth-child(7)){
+    width: 282px;
+    height: 613px;
+}
+.team__field-item{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.team__image{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid rgba(28, 107, 130, 1);
+    border-radius: 5px 15px 5px 5px;
+}
+.team__image-picture{
+    width: 100%;
+}
+.team__text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.team__text-surname{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.team__text-name{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: white;
+    text-align: center;
+}
+.team__text-member{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    color: rgba(113, 110, 123, 1);
+    text-align: center;
+    max-width: 279px;
+}
+.team__linked{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    color: white;
+    outline: 1px solid #716E7B;
+    border-radius: 5px 5px 5px 15px;
+    padding: 9px 25px;
+    margin-top: 5px;
+}
+.team__linked:hover{
+    background: #716E7B;
+}
+.team__field-item:nth-child(3) > .team__linked{
+    margin-top: -15px;
+}
+.team__image-circle{
+    position: absolute;
+    width: 148px;
+    height: 148px;
+    background: linear-gradient(180deg, #ED811D 0%, #EDB91D 100%);
+    border-radius: 200px;
+    top: -80px;
+    right: -80px;
+}
+.ref{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.ref__title{
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 77px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Bebas Neue Cyrillic";
+}
+.ref__orange{
+    color: rgba(237, 171, 18, 1);
+    font-family: "Bebas Neue Cyrillic";
+}
+.ref__desc{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+    color: white;
+    max-width: 607px;
+}
+.ref__button{
+    margin-top: 20px;
+    width: 303px;
+    border-radius: 5px 5px 25px 5px;
+}
+.connect{
+    max-width: 1200px;
+    margin: 130px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 487px;
+    padding: 0 83px;
+    outline: 1px solid rgba(28, 107, 130, 1);
+    box-shadow: 0 30px 120px rgba(52, 231, 255, 0.05);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.03);
+}
+.connect__title{
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 88px;
+    color: white;
+    font-family: "Bebas Neue Cyrillic";
+}
+.connect__field{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+    outline: 1px solid #CECCD1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 89px;
+}
+.connect__field-language{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 15px 0 25px;
+    background: rgba(255, 255, 255, 0.03);
+    height: 100%;
+}
+.connect__field-language > svg{
+    transform: rotate(90deg);
+}
+.connect__field-language > svg > path{
+    stroke: white;
+}
+.connect__field-language--country{
+    width: 28px;
+}
+.connect__field-input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.01);
+    height: 100%;
+    padding: 0 25px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+    color: white;
+}
+.connect__field-input::placeholder{
+    color: rgba(206, 204, 209, 1);
+}
+.connect__field-button{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    background: #ECB91E;
+    color: #080218;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 43px;
+}
+.footer{
+    border-top: 1px solid rgba(113, 110, 123, 1);
+    padding: 60px 0 26px 0;
+}
+.footer--wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer--top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__name{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: white;
+}
+.footer__logo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer__title{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 53px;
+    color: white;
+    font-family: "Bebas Neue Cyrillic";
+    max-width: 792px;
+}
+.footer__logo-link--image{
+    width: 311px;
+}
+.footer--bot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__contacts{
+    display: flex;
+    align-items: center;
+    gap: 57px;
+}
+.footer__contacts-item{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.footer__desc{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 33px;
+    color: white;
+    font-family: "Bebas Neue Cyrillic";
+}
+.footer__contacts-item:nth-child(2) > .footer__desc{
+    color: rgba(237, 171, 18, 1);
+}
+.footer__social{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer__social-item{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid white;
+    border-radius: 50px;
+}
+.footer__social-item:hover{
+    background: white;
+}
+.footer__social-item:hover > svg > path{
+    fill: #080218;
+}
+.footer__social-item:hover > svg > g > path{
+    fill: #080218;
 }
