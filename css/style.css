@@ -141,7 +141,7 @@ body{
 }
 .visit__link:hover{
     background: #ECB91E;
-    outline: 1px solid #EDB91D;
+    border: 1px solid #EDB91D;
     box-shadow: 0 15px 40px rgba(237, 129, 29, 0.37);
     color: #080218;
 }
@@ -150,7 +150,7 @@ body{
 }
 .visit__link:active{
     background: #D59A10;
-    outline: 1px solid #EDB91D;
+    border: 1px solid #EDB91D;
     box-shadow: 0 15px 40px rgba(237, 129, 29, 0.37);
 }
 .about{
@@ -164,7 +164,7 @@ body{
 .direction--name{
     font-size: 14px;
     color: #34E7FF;
-    outline: 2px solid #1C6B82;
+    border: 2px solid #1C6B82;
     padding: 5px 15px;
     border-radius: 5px;
 }
@@ -228,7 +228,7 @@ body{
 .decision{
     width: calc(100% - 55px);
     margin: 150px auto;
-    outline: 1px solid #1C6B82;
+    border: 1px solid #1C6B82;
     border-radius: 15px;
     padding: 115px 0 135px 0;
     background: url("../img/about_back.png") no-repeat 100%/cover;
@@ -422,7 +422,7 @@ body{
     position: absolute;
     width: 59px;
     height: 59px;
-    outline: 1px solid white;
+    border: 1px solid white;
     border-radius: 74px;
     top: 40%;
     z-index: 5;
@@ -433,7 +433,7 @@ body{
 }
 .slider--prev:hover, .slider--next:hover{
     background: #EDAB12;
-    outline: 1px solid #ECB91E;
+    border: 1px solid #ECB91E;
     box-shadow: 0 15px 40px rgba(237, 129, 29, 0.37);
     cursor: pointer;
 }
@@ -442,7 +442,7 @@ body{
 }
 .slider--prev:active, .slider--next:active{
     background: #D59A10;
-    outline: 1px solid #ECB91E;
+    border: 1px solid #ECB91E;
     box-shadow: 0 15px 40px rgba(237, 129, 29, 0.37);
 }
 .slider--prev:active > svg > path, .slider--next:active > svg > path{
@@ -458,7 +458,7 @@ body{
     right: -135px;
 }
 .swiper-button-disabled{
-    outline: 2px solid gray;
+    border: 2px solid gray;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
 }
 .swiper-button-disabled > svg > path{
@@ -467,7 +467,7 @@ body{
 .swiper-button-disabled:hover{
     background: none;
     cursor: default;
-    outline: 2px solid gray;
+    border: 2px solid gray;
     box-shadow: none;
 }
 .swiper-button-disabled:hover > svg > path{
@@ -505,7 +505,7 @@ body{
     width: 380px;
     height: 320px;
     background: rgba(255, 255, 255, 0.03);
-    outline: 1px solid rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.03);
     border-radius: 15px;
     padding-top: 10px;
     padding-left: 30px;
@@ -677,7 +677,7 @@ body{
     align-items: center;
     justify-content: space-between;
     background: rgba(255, 255, 255, 0.03);
-    outline: 1px solid rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.03);
     border-radius: 15px;
     box-sizing: border-box;
     width: 100%;
@@ -801,7 +801,7 @@ body{
 }
 .pay__cards-item:hover:not(:last-child):not(:last-child) > .card__button{
     background: white;
-    outline: 1px solid white;
+    border: 1px solid white;
     color: #080218;
 }
 .pay__cards-item:hover:not(:last-child):not(:last-child) > .card__button > svg > path{
@@ -838,7 +838,7 @@ body{
     line-height: 26px;
     letter-spacing: -0.01em;
     color: rgba(237, 171, 18, 1);
-    outline: 1px solid #EDAB12;
+    border: 1px solid #EDAB12;
     border-radius: 5px 5px 25px 5px;
     display: flex;
     align-items: center;
@@ -953,7 +953,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    outline: 1px solid rgba(28, 107, 130, 1);
+    border: 1px solid rgba(28, 107, 130, 1);
     border-radius: 5px 15px 5px 5px;
 }
 .team__image-picture{
@@ -999,7 +999,7 @@ body{
     line-height: 19px;
     letter-spacing: -0.01em;
     color: white;
-    outline: 1px solid #716E7B;
+    border: 1px solid #716E7B;
     border-radius: 5px 5px 5px 15px;
     padding: 9px 25px;
     margin-top: 5px;
@@ -1061,7 +1061,7 @@ body{
     box-sizing: border-box;
     height: 487px;
     padding: 0 83px;
-    outline: 1px solid rgba(28, 107, 130, 1);
+    border: 1px solid rgba(28, 107, 130, 1);
     box-shadow: 0 30px 120px rgba(52, 231, 255, 0.05);
     border-radius: 5px;
     background: url("../img/connect_left.png") no-repeat top left, url("../img/connect_right.png") no-repeat bottom right, url("../img/connect_top.png") no-repeat top right;
@@ -1079,7 +1079,7 @@ body{
     align-items: center;
     width: 100%;
     gap: 0;
-    outline: 1px solid #CECCD1;
+    border: 1px solid #CECCD1;
     border-radius: 5px;
     box-sizing: border-box;
     height: 89px;
@@ -1211,7 +1211,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    outline: 1px solid white;
+    border: 1px solid white;
     border-radius: 50px;
 }
 .footer__social-item:hover{
