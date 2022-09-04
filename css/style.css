@@ -585,6 +585,12 @@ body{
 .media__main{
     position: absolute;
     top: -260px;
+    max-width: 1200px;
+    width: 100%;
+}
+.media__main > iframe{
+    width: 100%;
+    height: 600px;
 }
 .media__slider{
     display: flex;
@@ -609,15 +615,26 @@ body{
 .media__slider-field > .swiper-wrapper{
     gap: 40px;
 }
+.media__slider-field > .swiper-wrapper > .swiper-slide-next > a > img{
+    border: 1px solid #EDAB12;
+}
 .media__slider-item{
     display: flex;
     flex-direction: column;
     gap: 29px;
     align-items: center;
     max-width: 360px;
+    width: 360px;
 }
 .media__slider-item--image{
-    width: 100%;
+    width: 360px;
+    border: 1px solid #080218;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+.media__slider-item--image:hover{
+    border: 1px solid #EDAB12;
+    cursor: pointer;
 }
 .media__slider-item--text{
     font-size: 25px;
@@ -659,7 +676,7 @@ body{
 .catalog__shadow{
     position: absolute;
     left: -25%;
-    top: -15%;
+    top: -10%;
 }
 .catalog__bot{
     position: absolute;
@@ -1135,6 +1152,10 @@ body{
     align-items: center;
     justify-content: center;
     padding: 0 43px;
+    transition: 0.3s;
+}
+.connect__field-button:hover{
+    box-shadow: inset 0 0 0 3em white;
 }
 .footer{
     border-top: 1px solid rgba(113, 110, 123, 1);
@@ -1616,6 +1637,7 @@ body{
     .team__image-picture{
         width: 280px;
         height: 438px;
+        object-fit: cover;
     }
     .ref__title{
         font-size: 33px;
@@ -1741,5 +1763,9 @@ body{
         transform: rotate(-45deg);
         top: 26px;
         left: 8px;
+    }
+    .media__main > iframe{
+        width: 100%;
+        height: 200px;
     }
 }

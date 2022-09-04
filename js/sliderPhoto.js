@@ -11,6 +11,7 @@ const swiper2 = new Swiper('.media__slider-field', {
         nextEl: '.video--next',
         prevEl: '.video--prev'
     },
+    loop: true,
     breakpoints: {
         360: {
             slidesPerView: 1
