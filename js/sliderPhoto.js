@@ -10,5 +10,16 @@ const swiper2 = new Swiper('.media__slider-field', {
     navigation: {
         nextEl: '.video--next',
         prevEl: '.video--prev'
+    },
+    breakpoints: {
+        360: {
+            slidesPerView: 1
+        },
+        660: {
+            slidesPerView: 2
+        },
+        960: {
+            slidesPerView: 3
+        }
     }
 })
