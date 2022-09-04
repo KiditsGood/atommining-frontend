@@ -20,6 +20,6 @@ const swiper2 = new Swiper('.media__slider-field', {
         },
         960: {
             slidesPerView: 3
-        }
+        },
     }
 })
