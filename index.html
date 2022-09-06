@@ -8,6 +8,8 @@
   />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/intlTelInput.css">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,10 +42,21 @@
 <main class="wrapper">
   <section class="visit">
     <div class="visit--wrap">
-      <img src="img/logo.svg" alt="" class="visit__logo">
+      <div class="visit__logo">
+        <svg class="visit__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 85" clip-rule="evenodd" fill-rule="evenodd"><defs><clipPath id="ClipPath-1"><path fill="#fff" d="M-10-3.6h109.9c-10.9 11.5-13.9 34-3 47.3h-106.9Z"></path></clipPath><mask id="Mask-1"><path fill="#fff" d="M-23.5-3.6h361v47.3h-359c10.5-14.8 9.2-29.9-2-47.3Z"></path></mask></defs><style>
+          @keyframes a0_t { 0% { transform: translate(98px,42.8px) translateY(-55.9px); } 50% { transform: translate(98px,42.8px) translateY(-55.9px); animation-timing-function: cubic-bezier(.2,.5,.5,.9); } 100% { transform: translate(0px,42.8px) translateY(-55.9px); } }
+          @keyframes a1_t { 0% { transform: translate(-518.8px,-13.1px); } 50% { transform: translate(-518.8px,-13.1px); animation-timing-function: cubic-bezier(.2,.5,.5,.9); } 100% { transform: translate(-172.6px,-13.1px); } }
+          @keyframes a2_t { 0% { transform: translate(2.7px,56.4px) scale(0,0) translate(31.9px,-21.8px); animation-timing-function: cubic-bezier(.2,.6,.4,1); } 33.333% { transform: translate(2.7px,56.4px) scale(1,1) translate(31.9px,-21.8px); } 100% { transform: translate(2.7px,56.4px) scale(1,1) translate(31.9px,-21.8px); } }
+          @keyframes a3_t { 0% { transform: translate(2.7px,56.4px) scale(0,0) translate(32.1px,-21.8px); } 16.667% { transform: translate(2.7px,56.4px) scale(0,0) translate(32.1px,-21.8px); animation-timing-function: cubic-bezier(.2,.6,.4,1); } 50% { transform: translate(2.7px,56.4px) scale(1,1) translate(32.1px,-21.8px); } 100% { transform: translate(2.7px,56.4px) scale(1,1) translate(32.1px,-21.8px); } }
+          @keyframes a4_t { 0% { transform: translate(34.6px,34.8px) rotate(0deg) translate(3.6px,-8.3px); } 20% { transform: translate(34.6px,34.8px) rotate(0deg) translate(3.6px,-8.3px); animation-timing-function: cubic-bezier(.2,.5,.5,.9); } 93.533% { transform: translate(34.6px,34.8px) rotate(360deg) translate(3.6px,-8.3px); } 100% { transform: translate(34.6px,34.8px) rotate(360deg) translate(3.6px,-8.3px); } }
+          @keyframes a5_t { 0% { transform: translate(19px,-13.8px) rotate(360deg) scale(0,0); } 20% { transform: translate(19px,-13.8px) rotate(360deg) scale(0,0); animation-timing-function: cubic-bezier(0,0,.6,1); } 39.6% { transform: translate(19px,-13.8px) rotate(360deg) scale(1,1); } 100% { transform: translate(19px,-13.8px) rotate(360deg) scale(1,1); } }
+        </style>
+          <g clip-path="url(#ClipPath-1)" transform="translate(10,20.6)"><path d="M32.9 55.8l.1 .1h9.1l-0.1-0.3l-17.4-41.4v-0.2h-6.6v.2l-17.9 41.4l-0.1 .3h9.1l.1-0.1l3.6-8.6h16.5Zm41.6-34.4h-9.3v34.5h-8.4v-34.5h-9.3v-7.3h27Zm-59 18.8l5.7-14.3l5.6 14.3Z" fill="#fff" transform="translate(98,42.8) translate(0,-55.9)" style="animation: 3s linear both a0_t;"></path></g><g mask="url(#Mask-1)" transform="translate(182.5,20.6)"><path d="M480.6 40.6v-7.3h19.4v.7c0 7.4-2 13.2-6.1 17.3c-3.7 3.7-8.7 5.5-14.9 5.5c-6.3 0-11.4-1.9-15.2-5.6c-4.1-4.2-6.2-9.6-6.2-16.1c0-6.3 2.1-11.5 6.2-15.6c4.1-4.3 9.6-6.4 16.4-6.4c3.7 0 6.9 .7 9.7 2.2c3.2 1.6 5.8 4.2 7.8 7.7l.1 .1l-0.1 .1l-7.1 3.8l-0.1 .1l-0.1-0.2c-1.1-2.1-2.7-3.7-4.8-4.8c-1.7-0.9-3.6-1.3-5.7-1.3c-3.9 0-7 1.2-9.5 3.6c-2.7 2.7-4.1 6.3-4.1 10.8c0 4.4 1.3 7.8 4 10.4c2.5 2.4 5.5 3.5 9.1 3.5c3.2 0 5.9-0.8 8.1-2.4c1.9-1.5 3.1-3.5 3.8-6.1Zm-308 15.1l-0.1 .2h8.6v-0.2l4.2-24.9l10.4 25v.1h3v-0.1l10.9-25l3.7 24.9v.2h8.5v-0.2l-7-41.5v-0.2h-6.1v.2l-11.4 26l-10.8-26l-0.1-0.2h-6.1v.2Zm61.6 0l-0.1 .2h8.6v-0.2l4.1-24.9l10.4 25l.1 .1h3v-0.1l10.9-25l3.6 24.9l.1 .2h8.5v-0.2l-7-41.5v-0.2h-6.1l-0.1 .2l-11.3 26l-10.9-26v-0.2h-6.1v.2Zm63.6-41.7l8.5 .1v41.8h-8.5Zm25.1 41.9h8.4v-27.5l24.9 27.4l.1 .1h5.8v-41.8l-8.4-0.1v27.5l-24.9-27.4l-0.1-0.1h-5.8Zm55.8-41.8l8.5-0.1v41.9h-8.5Zm25 41.8h8.5v-27.5l24.9 27.4l.1 .1h5.8v-41.8l-8.4-0.1v27.5l-25-27.4v-0.1h-5.9Z" fill="#fff" transform="translate(-346.3,42.8) translate(-172.6,-55.9)" style="animation: 3s linear both a1_t;"></path></g><g transform="translate(99.2,7.9)"><ellipse rx="31.9" ry="31.9" fill="none" stroke="#fdd528" stroke-width="5" transform="translate(2.7,56.4) scale(0,0) translate(31.9,-21.8)" style="animation: 3s linear both a2_t;"></ellipse><ellipse rx="16.8" ry="16.8" fill="#fff" stroke="#fff" stroke-width="1px" transform="translate(2.7,56.4) scale(0,0) translate(32.1,-21.8)" style="animation: 3s linear both a3_t;"></ellipse><g transform="translate(34.6,34.8) translate(3.6,-8.3)" style="animation: 3s linear both a4_t;"><ellipse rx="9.2" ry="9.2" fill="#fff" stroke="#fff" stroke-width="1px" transform="translate(19,-13.8) rotate(360) scale(0,0)" style="animation: 3s linear both a5_t;"></ellipse></g></g>
+        </svg>
+      </div>
       <h1 class="visit__title wow animate__animated animate__fadeInDown">Создаем бизнес в области майнинга криптовалют</h1>
       <p class="visit__desc">Производитель оборудования для майнинга криптовалют на GPU.</p>
-      <a href="/" class="visit__link">
+      <a class="visit__link">
         Консультация
         <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0.999999 0.999998L8 8L1 15" stroke="#080218" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -59,20 +72,20 @@
     <p class="about__description">Команда <span class="about__orange">ATOMMINING</span> предлагает оптимальные решения в майнинг бизнесе для своих клиентов.</p>
     <div class="about__pluses">
       <div class="about__pluses-item">
-        <img src="img/first_plus.png" alt="" class="about__pluses-item--image">
+        <img src="img/first_plus.jpg" alt="" class="about__pluses-item--image">
         <p class="about__pluses-item--text">Производство майнинг ферм на GPU</p>
       </div>
       <div class="about__pluses-item">
-        <img src="img/second_plus.png" alt="" class="about__pluses-item--image">
+        <img src="img/second_plus.jpg" alt="" class="about__pluses-item--image">
         <p class="about__pluses-item--text">Прямые поставки комплектующих</p>
       </div>
       <div class="about__pluses-item">
-        <img src="img/third_plus.png" alt="" class="about__pluses-item--image">
+        <img src="img/third_plus.jpg" alt="" class="about__pluses-item--image">
         <p class="about__pluses-item--text">Размещение в собственных дата-центрах</p>
         <p class="about__pluses-item--pseudo">сервис, ремонт и гарантийное обслуживание</p>
       </div>
       <div class="about__pluses-item">
-        <img src="img/fourth_plus.png" alt="" class="about__pluses-item--image">
+        <img src="img/fourth_plus.jpg" alt="" class="about__pluses-item--image">
         <p class="about__pluses-item--text">Комплексные бизнес решения для майнинга</p>
       </div>
     </div>
@@ -92,10 +105,10 @@
         <p class="multi__item-text--title wow animate__animated animate__fadeInDown">Уникальная система майнинга, которая доступна только клиентам нашей компании – <span class="multi__item-text--span">МУЛЬТИМАЙНИНГ</span></p>
         <p class="multi__item-text--description">Это результат аналитической работы, многолетней статистики, профессионального управления оборудованием и взаимодействия команды с мировым криптосообществом. По итогам 2021 года, при таком подходе средняя прибыль от вложенных инвестиций составила 180 % годовых.</p>
       </div>
-      <img src="img/multi_first.png" alt="" class="multi__item-image">
+      <img src="img/multi_first.jpg" alt="" class="multi__item-image">
     </div>
     <div class="multi__item">
-      <img src="img/multi_second.png" alt="" class="multi__item-image">
+      <img src="img/multi_second.jpg" alt="" class="multi__item-image">
       <div class="multi__item-text">
         <p class="direction--name">ШТАТ</p>
         <p class="multi__item-text--title wow animate__animated animate__fadeInDown">Компания насчитывается порядка 50 специалистов</p>
@@ -153,13 +166,10 @@
         <div class="slider swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="img/slider_photo.png" alt="" class="slider__image">
+              <img src="img/slider_photo.jpg" alt="" class="slider__image">
             </div>
             <div class="swiper-slide">
-              <img src="img/slider_photo.png" alt="" class="slider__image">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/slider_photo.png" alt="" class="slider__image">
+              <img src="img/slider_photo2.jpg" alt="" class="slider__image">
             </div>
           </div>
         </div>
@@ -468,7 +478,7 @@
     <div class="team__field">
       <div class="team__field-item">
         <div class="team__image">
-          <img src="img/saksonov.png" alt="" class="team__image-picture">
+          <img src="img/saksonov.jpg" alt="" class="team__image-picture">
           <div class="team__image-circle"></div>
         </div>
         <div class="team__text">
@@ -491,7 +501,7 @@
       </div>
       <div class="team__field-item">
         <div class="team__image">
-          <img src="img/kovalev.png" alt="" class="team__image-picture">
+          <img src="img/kovalev.jpg" alt="" class="team__image-picture">
           <div class="team__image-circle"></div>
         </div>
         <div class="team__text">
@@ -514,7 +524,7 @@
       </div>
       <div class="team__field-item">
         <div class="team__image">
-          <img src="img/soyko.png" alt="" class="team__image-picture">
+          <img src="img/soyko.jpg" alt="" class="team__image-picture">
           <div class="team__image-circle"></div>
         </div>
         <div class="team__text">
@@ -537,7 +547,7 @@
       </div>
       <div class="team__field-item">
         <div class="team__image">
-          <img src="img/gudach.png" alt="" class="team__image-picture">
+          <img src="img/gudach.jpg" alt="" class="team__image-picture">
           <div class="team__image-circle"></div>
         </div>
         <div class="team__text">
@@ -560,7 +570,7 @@
       </div>
       <div class="team__field-item">
         <div class="team__image">
-          <img src="img/saksonov_r.png" alt="" class="team__image-picture">
+          <img src="img/saksonov_r.jpg" alt="" class="team__image-picture">
           <div class="team__image-circle"></div>
         </div>
         <div class="team__text">
@@ -583,7 +593,7 @@
       </div>
       <div class="team__field-item">
         <div class="team__image">
-          <img src="img/stelmah.png" alt="" class="team__image-picture">
+          <img src="img/stelmah.jpg" alt="" class="team__image-picture">
           <div class="team__image-circle"></div>
         </div>
         <div class="team__text">
@@ -606,7 +616,7 @@
       </div>
       <div class="team__field-item">
         <div class="team__image">
-          <img src="img/moskvalevich.png" alt="" class="team__image-picture">
+          <img src="img/moskvalevich.jpg" alt="" class="team__image-picture">
           <div class="team__image-circle"></div>
         </div>
         <div class="team__text">
@@ -646,14 +656,31 @@
   <section class="connect">
     <p class="connect__title wow animate__animated animate__fadeInDown">СВЯЗАТЬСЯ С НАМИ</p>
     <div class="connect__field">
-      <div class="connect__field-language">
-        <img src="img/uk.svg" alt="" class="connect__field-language--country">
-        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0.999999 0.999998L8 8L1 15" stroke="#080218" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
       <input type="tel" class="connect__field-input" placeholder="Введите номер телефона">
       <a href="" class="connect__field-button">ОТПРАВИТЬ</a>
+    </div>
+  </section>
+  <section class="modals">
+    <div class="consult">
+      <div class="modal--wrap">
+        <div class="modal__text">
+          <p class="modal__text-title">Заказать консультацию</p>
+          <p class="modal__text-desc">Оставьте свои контакты и мы свяжется с Вами для подробной консультации</p>
+        </div>
+        <div class="modal__field">
+          <input type="text" class="modal__field-input" placeholder="Имя">
+          <div class="modal__out">
+            <input type="tel" class="modal__field-input modal__tel">
+          </div>
+          <input type="text" class="modal__field-input" placeholder="Email">
+        </div>
+        <button class="modal__button">Отправить</button>
+        <p class="modal__info">* Если вы хотите узнать цену прямо сейчас, то просто позвоните нам по номеру <a href="tel: +7(915)-314-55-11" class="modal__orange">+ 7 915 314 55 11</a></p>
+        <a rel="modal:close" class="modal__exit">
+          <span></span>
+          <span></span>
+        </a>
+      </div>
     </div>
   </section>
 </main>
@@ -723,9 +750,13 @@
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/sliderPhoto.js"></script>
 <script src="js/burger.js"></script>
+<script src="js/intlTelInput.js"></script>
+<script src="js/phoneMask.js"></script>
+<script src="js/modals.js"></script>
 <script>
   new WOW().init()
 </script>
