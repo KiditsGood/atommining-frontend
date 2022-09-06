@@ -1483,6 +1483,18 @@ body{
     letter-spacing: -0.01em;
     color: white;
 }
+.loader{
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (min-width: 1000px) and (max-width: 1240px){
     .header--wrap, .visit--wrap, .about, .decision--wrap, .multi, .info, .directions, .media--top, .media--bot_wrap, .catalog, .pay, .team, .ref, .connect, .media__main, .footer--wrap{
