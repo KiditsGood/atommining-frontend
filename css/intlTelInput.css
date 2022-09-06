@@ -43,13 +43,16 @@
     border-bottom: 4px solid #555; }
 .iti__country-list {
     position: absolute;
+    width: 100%;
     z-index: 2;
     list-style: none;
     text-align: left;
     padding: 0;
     margin: 0 0 0 -1px;
+    top: 91px;
+    left: 0;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-    background-color: white;
+    background-color: rgba(23, 17, 38, 1);
     border: 1px solid #CCC;
     white-space: nowrap;
     max-height: 200px;
@@ -57,7 +60,8 @@
     -webkit-overflow-scrolling: touch; }
 .iti__country-list--dropup {
     bottom: 100%;
-    margin-bottom: -1px; }
+    margin-bottom: -1px;
+}
 @media (max-width: 500px) {
     .iti__country-list {
         white-space: normal; } }
@@ -925,3 +929,32 @@
 
 .iti__flag.iti__np {
     background-color: transparent; }
+.iti__country-name{
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: white;
+}
+.iti__dial-code{
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: white;
+    font-weight: 500;
+}
+.iti__flag-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.iti__country-list::-webkit-scrollbar{
+    width: 7px;
+    height: 30px;
+}
+.iti__country-list::-webkit-scrollbar-track{
+    background: none;
+}
+.iti__country-list::-webkit-scrollbar-thumb{
+    background: #EDAB12;
+    border-radius: 3px;
+}
