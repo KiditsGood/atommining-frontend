@@ -93,6 +93,13 @@
     -webkit-animation-delay: -0.9s;
     animation-delay: -0.9s;
 }
+@media (max-width: 999px) {
+    .modal{
+        width: 100%;
+        min-width: unset;
+        padding: 35px 25px;
+    }
+}
 @-webkit-keyframes sk-stretchdelay {
     0%,
     40%,

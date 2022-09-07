@@ -958,3 +958,8 @@
     background: #EDAB12;
     border-radius: 3px;
 }
+@media(max-width: 999px) {
+    .iti__flag-container{
+        padding: 0 0 0 5px;
+    }
+}

@@ -2000,6 +2000,41 @@ body{
         width: 100%;
         height: 200px;
     }
+    .modal__text-title{
+        font-size: 30px;
+        line-height: 33px;
+    }
+    .modal__text-desc{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .modal__exit{
+        top: -15px;
+        right: 10px;
+    }
+    .modal__exit > span{
+        width: 25px;
+        height: 5px;
+    }
+    .modal__button{
+        padding: 16px 0;
+    }
+    .modal__field-input:not(.modal__tel){
+        padding: 19px 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .modal__out{
+        height: 60px;
+    }
+    .modal__tel{
+        padding: 20px;
+    }
+    .modal__info{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
 }
 .media__slider-field > .swiper-wrapper > .swiper-slide-next > a > img{
     border: 1px solid #EDAB12;
