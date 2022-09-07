@@ -1349,16 +1349,16 @@ body{
     gap: 5px;
 }
 .modal__text-title{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
-    line-height: 55px;
+    line-height: 45px;
     color: white;
     font-family: "Bebas Neue Cyrillic";
 }
 .modal__text-desc{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 24px;
     letter-spacing: -0.01em;
     color: #CECCD1;
     max-width: 450px;
@@ -1374,7 +1374,7 @@ body{
     border: 1px solid #CECCD1;
     border-radius: 5px;
     box-sizing: border-box;
-    padding: 29px 25px;
+    padding: 15px 25px;
     font-size: 22px;
     line-height: 31px;
     letter-spacing: -0.01em;
@@ -1398,7 +1398,7 @@ body{
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid #CECCD1;
     border-radius: 5px;
-    height: 91px;
+    height: 63px;
 }
 .modal__button{
     font-size: 16px;
@@ -1411,7 +1411,7 @@ body{
     background: #ECB91E;
     box-shadow: 0 15px 40px rgba(237, 129, 29, 0.37);
     border-radius: 5px;
-    padding: 31px 0;
+    padding: 17px 0;
 }
 .modal__button:hover{
     background: none;
@@ -2352,4 +2352,9 @@ body{
 }
 .visit__desc span:nth-child(59){
     animation-delay: 3.52s;
+}
+@media (max-height: 810px) {
+    .visit{
+        margin-bottom: 15%;
+    }
 }
