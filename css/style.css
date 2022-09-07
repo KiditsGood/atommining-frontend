@@ -1653,12 +1653,6 @@ body{
     .about{
         gap: 10px;
     }
-    .about__pluses-item--image{
-        width: 330px;
-        height: 220px;
-        object-fit: cover;
-        border-radius: 5px 25px 5px 5px;
-    }
     .about__pluses-item{
         width: 330px;
     }
