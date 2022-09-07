@@ -782,9 +782,9 @@
   </section>
   <section class="connect">
     <p class="connect__title wow animate__animated animate__fadeInUp">СВЯЗАТЬСЯ С НАМИ</p>
-    <form class="connect__field">
-      <input type="tel" class="connect__field-input">
-      <button type="submit" class="connect__field-button">ОТПРАВИТЬ</button>
+    <form method="post" action="bottom.php" class="connect__field">
+      <input required name="bottom_tel" type="tel" class="connect__field-input">
+      <button class="connect__field-button">ОТПРАВИТЬ</button>
     </form>
   </section>
   <section class="modals">
@@ -795,11 +795,11 @@
           <p class="modal__text-desc">Оставьте свои контакты и мы свяжется с Вами для подробной консультации</p>
         </div>
         <div class="modal__field">
-          <input name="user_name" type="text" class="modal__field-input" placeholder="Имя">
+          <input required name="user_name" type="text" class="modal__field-input" placeholder="Имя">
           <div class="modal__out">
-            <input name="user_tel" type="tel" class="modal__field-input modal__tel">
+            <input required name="user_tel" type="tel" class="modal__field-input modal__tel">
           </div>
-          <input name="user_email" type="text" class="modal__field-input" placeholder="Email">
+          <input required name="user_email" type="email" class="modal__field-input" placeholder="Email">
         </div>
         <button type="submit" class="modal__button">Отправить</button>
         <p class="modal__info">* Если вы хотите узнать цену прямо сейчас, то просто позвоните нам по номеру <a href="tel: +7(915)-314-55-11" class="modal__orange">+ 7 915 314 55 11</a></p>
@@ -810,17 +810,17 @@
       </form>
     </div>
     <div class="graphics">
-      <form class="modal--wrap">
+      <form action="graphics.php" method="post" class="modal--wrap">
         <div class="modal__text">
           <p class="modal__text-title">Хочу узнать цену</p>
           <p class="modal__text-desc graphics__desc">Майнинг ферма на GPU <span class="modalField"> RTX 3060 TI </span><span class="modalRed"></span></p>
         </div>
         <div class="modal__field">
-          <input type="text" class="modal__field-input" placeholder="Имя">
+          <input required name="graphics_name" type="text" class="modal__field-input" placeholder="Имя">
           <div class="modal__out">
-            <input type="tel" class="modal__field-input modal__tel">
+            <input required name="graphics_tel" type="tel" class="modal__field-input modal__tel">
           </div>
-          <input type="text" class="modal__field-input" placeholder="Email">
+          <input required name="graphics_email" type="email" class="modal__field-input" placeholder="Email">
         </div>
         <button type="submit" class="modal__button">Отправить</button>
         <p class="modal__info">* Если вы хотите узнать цену прямо сейчас, то просто позвоните нам по номеру <a href="tel: +7(915)-314-55-11" class="modal__orange">+ 7 915 314 55 11</a></p>
@@ -831,7 +831,7 @@
       </form>
     </div>
     <div class="credit">
-      <form class="modal--wrap">
+      <form action="bottom.php" method="post" class="modal--wrap">
         <div class="modal__text">
           <p class="modal__text-title">Безналичный расчёт</p>
           <p class="modal__text-desc">Приминаем к оплате карты:</p>
@@ -852,7 +852,7 @@
         </div>
         <div class="modal__field">
           <div class="modal__out">
-            <input type="tel" class="modal__field-input modal__tel">
+            <input required name="bottom_tel" type="tel" class="modal__field-input modal__tel">
           </div>
         </div>
         <button type="submit" class="modal__button">Отправить</button>
@@ -864,7 +864,7 @@
       </form>
     </div>
     <div class="procent">
-      <form class="modal--wrap">
+      <form action="bottom.php" method="post" class="modal--wrap">
         <div class="modal__text">
           <p class="modal__text-title">Лизинг</p>
           <div class="modal__methods">
@@ -880,7 +880,7 @@
         </div>
         <div class="modal__field">
           <div class="modal__out">
-            <input type="tel" class="modal__field-input modal__tel">
+            <input required name="bottom_tel" type="tel" class="modal__field-input modal__tel">
           </div>
         </div>
         <button type="submit" class="modal__button">Отправить</button>

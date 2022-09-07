@@ -7,13 +7,13 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/PHPMailer/src/Exception.php';
 require_once $_SERVER["DOCUMENT_ROOT"] . '/PHPMailer/src/PHPMailer.php';
 require_once $_SERVER["DOCUMENT_ROOT"] . '/PHPMailer/src/SMTP.php';
 
-if (isset($_POST["user_name"]) && isset($_POST["user_email"]) && isset($_POST["user_tel"])) {
+if (isset($_POST["graphics_name"]) && isset($_POST["graphics_email"]) && isset($_POST["graphics_tel"])) {
 
-    if (!empty($_POST["user_email"])) {
+    if (!empty($_POST["graphics_email"])) {
 
-        $user_name = htmlspecialchars(trim($_POST["user_name"]));
-        $user_email = htmlspecialchars(trim($_POST["user_email"]));
-        $user_tel = htmlspecialchars(trim($_POST["user_tel"]));
+        $user_name = htmlspecialchars(trim($_POST["graphics_name"]));
+        $user_email = htmlspecialchars(trim($_POST["graphics_email"]));
+        $user_tel = htmlspecialchars(trim($_POST["graphics_tel"]));
 
         $mail = new PHPMailer;
         $mail->isSMTP();
@@ -33,10 +33,10 @@ if (isset($_POST["user_name"]) && isset($_POST["user_email"]) && isset($_POST["u
         $mail->FromName = "Запись с сайта Atommining";
         $mail->addAddress('atom.mining@bk.ru');
 
-        // Контент                   
+        // Контент
         $mail->isHTML(true);
         $mail->Subject = 'Новая запись на сайте от ' . date('d.m.y');
-        $mail->Body    = '<b>Заказать консультацию</b><br><b>Имя: </b>' . $user_name . '<br><b>Телефон: </b>' . $user_tel . '<br><b>Email: </b>'  . $user_email  . '<br><b>Дата обращения: </b>'  . date('d.m.y H:i');
+        $mail->Body    = '<b>Узнать цену</b><br><b>Имя: </b>' . $user_name . '<br><b>Телефон: </b>' . $user_tel . '<br><b>Email: </b>'  . $user_email  . '<br><b>Дата обращения: </b>'  . date('d.m.y H:i');
 
         // Отправка
         if (!$mail->send()) {
