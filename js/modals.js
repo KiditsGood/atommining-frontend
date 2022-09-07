@@ -41,27 +41,27 @@ $('.catalog__button').click(() => {
     }
 })
 
-// $(window).on('load', function() {
-//     $('.loader').fadeOut().end().delay(400).fadeOut('slow');
-//
-//     // (function($) {
-//     //     var s,
-//     //         spanizeLetters = {
-//     //             settings: {
-//     //                 letters: $('.visit__title, .visit__desc'),
-//     //             },
-//     //             init: function() {
-//     //                 s = this.settings;
-//     //                 this.bindEvents();
-//     //             },
-//     //             bindEvents: function(){
-//     //                 s.letters.html(function (i, el) {
-//     //                     //spanizeLetters.joinChars();
-//     //                     var spanizer = $.trim(el).split("");
-//     //                     return '<span>' + spanizer.join('</span><span>') + '</span>';
-//     //                 });
-//     //             },
-//     //         };
-//     //     spanizeLetters.init();
-//     // })(jQuery);
-// });
+$(window).on('load', function() {
+    $('.loader').fadeOut().end().delay(400).fadeOut('slow');
+
+    (function($) {
+        var s,
+            spanizeLetters = {
+                settings: {
+                    letters: $('.visit__title, .visit__desc'),
+                },
+                init: function() {
+                    s = this.settings;
+                    this.bindEvents();
+                },
+                bindEvents: function(){
+                    s.letters.html(function (i, el) {
+                        //spanizeLetters.joinChars();
+                        var spanizer = $.trim(el).split("");
+                        return '<span>' + spanizer.join('</span><span>') + '</span>';
+                    });
+                },
+            };
+        spanizeLetters.init();
+    })(jQuery);
+});
