@@ -244,7 +244,9 @@
     </div>
     <div class="media--bot">
         <div class="media--bot_wrap">
-
+          <a data-fancybox href="https://www.youtube.com/watch?v=YkV8qxouGm0&ab_channel=AtomMining" class="media__main">
+            <img src="img/main.png" alt="" class="media__main-image">
+          </a>
           <div class="media__slider">
             <p class="media__slider-title">МЫ НА YOUTUBE</p>
             <div class="media__slider-field swiper">
@@ -787,17 +789,17 @@
   </section>
   <section class="modals">
     <div class="consult">
-      <form class="modal--wrap">
+      <form action="mail.php" class="modal--wrap">
         <div class="modal__text">
           <p class="modal__text-title">Заказать консультацию</p>
           <p class="modal__text-desc">Оставьте свои контакты и мы свяжется с Вами для подробной консультации</p>
         </div>
         <div class="modal__field">
-          <input type="text" class="modal__field-input" placeholder="Имя">
+          <input name="user_name" type="text" class="modal__field-input" placeholder="Имя">
           <div class="modal__out">
-            <input type="tel" class="modal__field-input modal__tel">
+            <input name="user_tel" type="tel" class="modal__field-input modal__tel">
           </div>
-          <input type="text" class="modal__field-input" placeholder="Email">
+          <input name="user_email" type="text" class="modal__field-input" placeholder="Email">
         </div>
         <button type="submit" class="modal__button">Отправить</button>
         <p class="modal__info">* Если вы хотите узнать цену прямо сейчас, то просто позвоните нам по номеру <a href="tel: +7(915)-314-55-11" class="modal__orange">+ 7 915 314 55 11</a></p>
@@ -970,9 +972,8 @@
 
   document.querySelectorAll('.modal__tel').forEach(telElement => {
     window.intlTelInput(telElement, {
-      autoPlaceholder: true,
-      initialCountry: 'ru',
       utilsScript: 'js/utils.js',
+      initialCountry: 'ru',
     })
   })
 </script>
